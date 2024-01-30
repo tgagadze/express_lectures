@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <%- include('../partials/header', {userName: data.userName}) %>
+    <h1>Hello <%= data.userName %> from <%= data.page %> page</h1>
+    <ul>
+      <% list.forEach(element => { %>
+      <li><%= element %></li>
+      <% }); %>
+    </ul>
+    <a href="/about">About</a>
+  </body>
+</html>
